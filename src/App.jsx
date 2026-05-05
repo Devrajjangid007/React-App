@@ -1,27 +1,19 @@
-import { useState } from 'react'
-import './App.css'
-import { Route, Routes } from 'react-router-dom'
-import Project from './pages/Project'
-import Home from './pages/Home'
-import Contect from './pages/contect'
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Contect from "../src/pages/Contect";
+import Home from "../src/pages/Home";
+import Project from "../src/pages/Project";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-   <div>
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/project' element={<Project />} />
-      <Route path='/contect' element={<Contect />} />
-    </Routes>
+    <div>
+      <Routes>
+        <Route path="/contect" element={<Contect/>} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/project" element={<Project />} />
+      </Routes>
+    </div>
+  );
+};
 
-
-
-   </div>
-  )
-}
-
-export default App
-
-
+export default App;
