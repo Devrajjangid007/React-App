@@ -1,14 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
-function Dhead() {
+const head = () => {
   return (
-    <div>
-      <Link to='/' >Home</Link>
-      <Link to='/project' >project</Link>
-      <Link to='/contect' >contect</Link>
-    </div>
+    <div>head</div>
   )
 }
 
-export default Dhead
+export default head
