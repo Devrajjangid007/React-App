@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <div>
       <Bannner/>
+      <div> Hey Dev</div>
     </div>
   )
 }
